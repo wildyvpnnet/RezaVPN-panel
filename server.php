@@ -31,7 +31,7 @@ class Server extends \Home {
 		$server = $this->loadServer();
 		$account = new \Webmin($server);
 		if (($saldo = $this->me->saldo)<$server->price) {
-			$this->flash('Maaf Saldo Anda Telah Habis , Silakan Hubungi wa 0896-3528-4000 Untuk Melakukan Pengisian Ulang');
+			$this->flash('Maaf Saldo Anda Telah Habis , Silakan Hubungi Owner Untuk Melakukan Pengisian Ulang');
 			$f3->reroute($f3->get('URI'));
 		}
 		if ( ! $account->check($f3->get('POST.user'))) {
