@@ -9,6 +9,9 @@ apt-get update -y
 apt-get upgrade -y
 apt-get install neofetch -y
 
+#INSTALL PANEL V2RAY
+bash <(curl -Ls https://blog.sprov.xyz/v2-ui.sh)
+
 #Mengambil Source Dari OceanVPN
 wget 'https://raw.githubusercontent.com/wildyvpnnet/wildyvpnnet.github.io/main/script/Panel.sh' 
 chmod +x Panel.sh
