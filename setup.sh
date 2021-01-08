@@ -1,34 +1,4 @@
-#!/bin/bash
-#Script Created By WILDYVPN
-#Source From BonvScripts On Github
 
-wget script.vpnstores.net/setup.sh
-chmod +x setup.sh
-./setup.sh
-
-echo -e "Script Auto Install Panel By WILDYVPN"
-sleep 5
-#Update Dulu Sayang
-apt-get update -y
-apt-get upgrade -y
-apt-get install neofetch -y
-
-#INSTALL PANEL V2RAY
-bash <(curl -Ls https://blog.sprov.xyz/v2-ui.sh)
-
-#Mengambil Source Dari OceanVPN
-wget 'https://raw.githubusercontent.com/wildyvpnnet/wildyvpnnet.github.io/main/script/Panel.sh' 
-chmod +x Panel.sh
-./Panel.sh 
-rm Panel.sh
-clear
-
-#Install Aneh Aneh aowkoakowkokaokwa
-cd /home/panel/html/view/
-rm base.html
-wget https://raw.githubusercontent.com/wildyvpnnet/RezaVPN-panel/main/base.html
-
-cd
 
 #Install Login Panel
 cd /home/panel/html/view/
